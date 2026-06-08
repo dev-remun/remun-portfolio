@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'inter-bold';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('Inter'), url('/src/fonts/Inter_18pt-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-regular';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('Inter'), url('/src/fonts/Inter_18pt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('Inter'), url('/src/fonts/Inter_18pt-Medium.ttf') format('truetype');
+}
