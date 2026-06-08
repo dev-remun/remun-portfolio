@@ -4,7 +4,7 @@ const ProfileCard = () => {
     return (
         <div className="flex gap-x-[60px] max-w-[880px] w-full">
             {/* Profile Picture */}
-            <img src="src\assets\remun_pic_1.jpg" width={160} height={160} className="rounded-[20px] shadow-lg"/>
+            <img src="/remun_pic_1.jpg" width={160} height={160} className="rounded-[20px] shadow-lg"/>
 
             {/* Profile Information */}
             <div className="flex flex-col justify-center gap-y-[24px]">
