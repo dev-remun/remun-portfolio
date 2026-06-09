@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 
     return(
-        <nav className="relative w-full max-w-[1000px] flex justify-between items-center mt-[40px] md:mt-[40px] mb-[40px] md:mb-[80px] px-[20px] md:px-[40px] py-[16px] bg-[#FDFDFD] rounded-[10px] shadow-md z-50">
+        <nav className="relative w-full max-w-[1000px] flex justify-between items-center mt-[20px] md:mt-[40px] mb-[40px] md:mb-[80px] px-[20px] md:px-[40px] py-[16px] bg-[#FDFDFD] rounded-[10px] shadow-md z-50">
             {/* Logo */}
             <Logo onClickButton={() => handleNavigation("/")}/>
 
