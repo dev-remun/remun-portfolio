@@ -7,7 +7,7 @@ const ExperienceCard = () => {
             
             {/* Company experiences */}
             <div className="flex flex-col md:gap-y-[10px] gap-y-[10px]">
-                <CompanyExperience company_name={"Bicol University"} position={"Intern"} year={"2026"} />
+                <CompanyExperience company_name={"Bicol University, HealthSync+ Project"} position={"Intern"} year={"2026"} />
                 <CompanyExperience company_name={"Albay Reality"} position={"Mobile Developer"} year={"2025-2026"} />
                 <CompanyExperience company_name={"Albay Reality"} position={"UI/UX Designer"} year={"2025-2026"} />
             </div>

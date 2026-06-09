@@ -4,6 +4,7 @@ import ExperienceCard from "../components/ExperienceCard";
 import Navbar from "../components/Navbar";
 import ProfileCard from "../components/ProfileCard";
 import Section from "../components/Section";
+import SkillsCard from "../components/SkillsCard";
 
 const HomePage = () => {
     return (
@@ -14,6 +15,7 @@ const HomePage = () => {
                 <AboutMeCard />
                 <ExperienceCard />
             </Section>
+            <SkillsCard />
         </div>
     );
 }

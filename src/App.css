@@ -1,1 +1,14 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    animation: move 20s infinite linear;
+}
+
+@keyframes move {
+    from { translate: 0; }
+    to { translate: -100%; }
+}

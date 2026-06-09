@@ -4,6 +4,7 @@ import Logo from "../components/Logo";
 
 import Navbar from "../components/Navbar";
 import ProfileCard from "../components/ProfileCard";
+import SkillsCard from "../components/SkillsCard";
 import Tag from "../components/Tag";
 
 const Test = () => {
@@ -12,7 +13,7 @@ const Test = () => {
     }
     return (
         <div className="flex flex-col items-center">
-            <Tag tag_name={"Tag"}/>
+            <SkillsCard />
         </div>
 
     );
