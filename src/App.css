@@ -5,7 +5,7 @@
 }
 
 .group {
-    animation: move 20s infinite linear;
+    animation: move 14s infinite linear;
 }
 
 @keyframes move {

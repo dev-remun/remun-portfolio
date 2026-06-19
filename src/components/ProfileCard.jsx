@@ -21,8 +21,8 @@ const ProfileCard = () => {
                 
 
                 <div className="flex gap-x-[12px]">
-                    <Tag tag_name={"Lorem Ipsum"} />
-                    <Tag tag_name={"Lorem Ipsum"} />
+                    <Tag tag_name={"Software Development"} />
+                    <Tag tag_name={"Data Science and ML"} />
                 </div>
                 
             </div>
