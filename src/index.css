@@ -20,3 +20,10 @@
     font-weight: 200 700;
     src: local('Inter'), url('/src/fonts/Inter_18pt-Medium.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'inter-semibold';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('Inter'), url('/src/fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+}

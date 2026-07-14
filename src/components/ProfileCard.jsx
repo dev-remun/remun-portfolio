@@ -5,7 +5,7 @@ const ProfileCard = () => {
     return (
         <div className="flex flex-col py-[28px] md:flex-row items-center md:justify-center md:items-start md:mb-[40px] mb-[40px] text-center md:text-left gap-y-[24px] md:gap-y-0 gap-x-[40px] max-w-[1000px] w-full px-[20px] md:px-0 shadow-md rounded-[10px] bg-[#FDFDFD]">
             {/* Profile Picture */}
-            <img src="/remun_pic_1.jpg" className="w-[120px] md:w-[160px] h-[120px] md:h-[160px] rounded-[120px] shadow-lg object-cover" alt="Profile" />
+            <img src="/remun_pic_2.png" className="w-[120px] md:w-[160px] h-[120px] md:h-[160px] rounded-[120px] shadow-lg object-cover" alt="Profile" />
 
             {/* Profile Information */}
             <div className="flex flex-col justify-center items-center md:items-start gap-y-[16px] md:gap-y-[24px] md:pt-[20px]">

@@ -2,7 +2,7 @@ import CompanyExperience from "./CompanyExperience";
 
 const ExperienceCard = () => {
     return (
-        <div className="w-full md:max-w-[400px] px-[24px] py-[24px] md:px-[24px] md:py-[24px] rounded-[10px] shadow-md bg-[#FDFDFD]">
+        <div className="w-full md:max-w-[1000px] px-[24px] py-[24px] md:px-[24px] md:py-[24px] rounded-[10px] shadow-md bg-[#FDFDFD] mb-[40px]">
             <h2 className="font-[inter-bold] text-[#103D62] text-[14px] md:text-[16px] md:mb-[12px] mb-[12px]">Experience</h2>
             
             {/* Company experiences */}
