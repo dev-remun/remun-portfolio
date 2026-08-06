@@ -3,7 +3,7 @@ import AboutMeCard from "../components/AboutMeCard";
 import CertificationCard from "../components/CertificationCard";
 import ExperienceCard from "../components/ExperienceCard";
 import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
+import ProfileCard from "../components/cards/ProfileCard";
 import Section from "../components/Section";
 import ContactCard from "../components/ContactCard";
 import SkillsCard from "../components/cards/SkillsCard";
