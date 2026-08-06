@@ -23,7 +23,7 @@ const ProfileCard = () => {
                     <div 
                         className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${is_flipped ? 'opacity-0' : 'opacity-100'}`}
                     >
-                        <p className="h-full text-[10px] leading-[10px] font-mono break-all text-justify bg-[url('remun_v2.png')] bg-[100%_100%] bg-no-repeat bg-clip-text text-transparent cursor-default select-none">
+                        <p className="h-full text-[10px] leading-[10px] font-mono break-all text-justify bg-[url('/remun_v2.png')] bg-[100%_100%] bg-no-repeat bg-clip-text text-transparent cursor-default select-none">
                             {portrait_text}
                         </p>
                     </div>
@@ -32,7 +32,7 @@ const ProfileCard = () => {
                         className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${is_flipped ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                     >
                         <img 
-                            src="remun_v2.png" 
+                            src="/remun_v2.png" 
                             alt="portrait" 
                             className="w-full h-full object-cover" 
                         />
