@@ -11,7 +11,7 @@ const ContactLink = ({ icon, username, name, url }) => {
                 <Icon path={icon} name={name} />
             
                 <div className="flex flex-col gap-y-[4px]">
-                    <span className="font-[inter-regular] underline text-gray-600 text-[14px] md:text-[14px] cursor-pointer">
+                    <span className="font-[fira-mono] underline text-gray-600 text-[14px] md:text-[14px] cursor-pointer">
                         {username}
                     </span>
                 </div>

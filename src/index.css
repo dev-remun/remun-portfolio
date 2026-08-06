@@ -27,3 +27,24 @@
     font-weight: 200 700;
     src: local('Inter'), url('/src/fonts/Inter_18pt-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'archivo';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('Archivo'), url('/src/fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'jetbrains-mono';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('JetBrains Mono'), url('/src/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fira-mono';
+    font-style: normal;
+    font-weight: 200 700;
+    src: local('Fira Mono'), url('/src/fonts/FiraMono-Regular.ttf') format('truetype');
+}
