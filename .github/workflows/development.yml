@@ -1,0 +1,37 @@
+name: Test PRs going to development
+
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # setup node environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.17.0'
+          cache: 'npm'
+
+      # install project dependencies
+      - name: Install dependencies
+        run: make ci-setup
+
+      # execute test cases
+      - name: Run tests
+        run: make run-tests
+
+      # build the react portfolio project
+      - name: Build project
+        run: make build

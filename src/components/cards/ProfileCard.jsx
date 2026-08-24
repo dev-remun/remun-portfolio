@@ -3,6 +3,7 @@ import { useState  } from "react";
 
 import { CircleArrowUp } from 'lucide-react';
 
+import TagContainer from "../tags/TagContainer";
 import Card from "../templates/Card";
 import SocialLink from "../links/SocialLink";
 
@@ -12,6 +13,15 @@ const ProfileCard = () => {
     const portrait_text = "mond".repeat(2500); 
 
     const [is_flipped, setIsFlipped] = useState(false);
+
+    const tags = [
+        { tag_name: "Laravel", color: "red" },
+        { tag_name: "Vue", color: "green" },
+        { tag_name: "Postgres", color: "orange" },
+        { tag_name: "PHP", color: "blue" },
+        { tag_name: "YOLOv11", color: "yellow" },
+        { tag_name: "MobileNetV3", color: "red" },
+    ];
 
     return(
         <div className="max-w-[1000px] w-full flex flex-col gap-x-10 md:flex-row">
@@ -46,7 +56,7 @@ const ProfileCard = () => {
             </div>
 
             {/* # details container */}
-            <Card className="flex flex-col gap-y-2 p-4 md:p-6">
+            <Card className="flex flex-col gap-y-2 p-4 md:p-6 max-w-[600px]">
                 <h1 className="font-[archivo] text-[28px] mb-4">hi! im mond</h1>
                 <p className="font-[inter-regular] text-sm text-gray-600 md:text-base">20 M Albay</p>
                 <p className="font-[inter-regular] text-sm text-gray-600 md:text-base">i do software dev and ml projects</p>
@@ -58,6 +68,10 @@ const ProfileCard = () => {
                     <SocialLink href="https://www.facebook.com/ray.cabarlo">Facebook</SocialLink>
                     <SocialLink href="https://mail.google.com/mail/?view=cm&fs=1&to=rcb2023-9793-64187@bicol-u.edu.ph">Email</SocialLink>
                     <SocialLink href="/resume/BALINGBING - Resume.pdf">Resume</SocialLink>
+                </div>
+
+                <div className="flex gap-x-4 mt-4">
+                    <TagContainer tags={tags} />
                 </div>
             </Card>
 
