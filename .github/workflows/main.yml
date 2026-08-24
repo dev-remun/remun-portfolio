@@ -1,4 +1,4 @@
-name: Test PRs goint to main then deploy
+name: Test PRs going to main then deploy
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build_and_test:
+  build_test_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,17 +21,25 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24.17.0'
           cache: 'npm'
 
       # install project dependencies
       - name: Install dependencies
-        run: npm ci
+        run: make ci_setup
 
       # execute test cases
       - name: Run tests
-        run: npm run test -- --run
+        run: make run_tests
 
-      # build the react portfolio
+      # build the react project
       - name: Build project
-        run: npm run build
+        run: make build
+
+      # deploy to vercel production
+      - name: Deploy to Vercel
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: npx vercel deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
