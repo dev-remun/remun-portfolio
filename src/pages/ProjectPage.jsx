@@ -1,11 +1,5 @@
 
-import AboutMeCard from "../components/AboutMeCard";
-import CertificationCard from "../components/CertificationCard";
-import ExperienceCard from "../components/ExperienceCard";
 import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
-import Section from "../components/Section";
-import SkillsCard from "../components/SkillsCard";
 import WorkInProgress from "../components/WorkInProgress";
 
 const ProjectPage = () => {
