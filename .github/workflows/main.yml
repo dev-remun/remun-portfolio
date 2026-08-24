@@ -26,11 +26,11 @@ jobs:
 
       # install project dependencies
       - name: Install dependencies
-        run: make ci_setup
+        run: make ci-setup
 
       # execute test cases
       - name: Run tests
-        run: make run_tests
+        run: make run-tests
 
       # build the react project
       - name: Build project
