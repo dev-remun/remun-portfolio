@@ -50,7 +50,7 @@ const Navbar = ({active_button}) => {
                     <Button button_name={"Projects"} onClickButton={() => handleNavigation("/projects")} is_activated={active_button} />
                     <Button button_name={"Services"} onClickButton={() => handleNavigation("/services")} is_activated={active_button} />
                     <Button button_name={"Blogs"} onClickButton={() => handleNavigation("/blogs")} is_activated={active_button} />
-                    <Button button_name={"Download Resume"} onClickButton={() => setShowPopup(true)} is_activated={active_button} />
+                    <Button button_name={"Resources"} onClickButton={() => setShowPopup(true)} is_activated={active_button} />
                 </div>
             
                 {/* Mobile dropdown menu */}
@@ -59,7 +59,7 @@ const Navbar = ({active_button}) => {
                         <Button button_name={"Projects"} onClickButton={() => handleNavigation("/projects")} is_activated={active_button} />
                         <Button button_name={"Services"} onClickButton={() => handleNavigation("/services")} is_activated={active_button} />
                         <Button button_name={"Blogs"} onClickButton={() => handleNavigation("/blogs")} is_activated={active_button} />
-                        <Button button_name={"Download Resume"} onClickButton={() => setShowPopup(true)} is_activated={active_button} />
+                        <Button button_name={"Resources"} onClickButton={() => setShowPopup(true)} is_activated={active_button} />
                     </div>
                 )}
             </nav>
