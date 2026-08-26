@@ -1,19 +1,25 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import ProjectPage from "./pages/ProjectPage";
-import ServicePage from "./pages/ServicePage";
-import BlogPage from "./pages/BlogPage";
+import Home from "./pages/Home";
+import Certifications from "./pages/Certifications";
+import Projects from "./components/cards/Projects";
+import Services from "./pages/Services";
+import Blogs from './pages/Blogs';
 
-import Test from "./pages/Test";
+import MainLayout from "./components/layouts/MainLayout";
 
 export const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
-  { path: "/projects", element: <ProjectPage /> },
-  { path: "/services", element: <ServicePage /> },
-  { path: "/blogs", element: <BlogPage /> },
-  { path: "test", element: <Test /> }
+    {
+        element: <MainLayout />,
+        children: [
+          { path: "/", element: <Home /> },
+          { path: "/certifications", element: <Certifications /> },
+          { path: "/projects", element: <Projects /> },
+          { path: "/services", element: <Services /> },
+          { path: "/blogs", element: <Blogs /> }
+        ]
+    }
 ])
 
 const App = () => {
@@ -22,4 +28,4 @@ const App = () => {
   );
 }
 
-export default App
+export default App;
