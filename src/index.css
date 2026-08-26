@@ -48,3 +48,15 @@
     font-weight: 200 700;
     src: local('Fira Mono'), url('/src/fonts/FiraMono-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'public-sans';
+    src: local('Public Sans'), url('/src/fonts/PublicSans-Regular.ttf') format('truetype');
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
