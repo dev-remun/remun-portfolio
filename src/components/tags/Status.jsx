@@ -18,7 +18,7 @@ const Status = ({status_name}) => {
 
     return (
         <div className={status_class}>
-            <p className="text-sm font-[public-sans]">
+            <p className="text-xs md:text-sm lg:text-sm font-[public-sans]">
                 {status_name}
             </p>
         </div>
