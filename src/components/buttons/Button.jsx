@@ -1,7 +1,7 @@
 
 const Button = ({ onClick, children, type = "button", variant, size, ...rest }) => {
 
-    let class_name = "rounded-md font-[public-sans] hover:cursor-pointer";
+    let class_name = "rounded-md font-[public-sans] hover:cursor-pointer text-sm md:text-base lg:text-base";
 
     switch(variant) {
         case "primary":
