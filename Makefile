@@ -16,7 +16,7 @@ ci-setup:
 	npm ci
 
 dev:
-	$(NPM_CMD) dev
+	$(NPM_CMD) dev -- --host
 
 build:
 	$(NPM_CMD) build

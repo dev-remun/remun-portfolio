@@ -1,13 +1,10 @@
 
-import WorkInProgress from "../components/WorkInProgress";
+import ProjectsCard from "../components/cards/Projects";
 
 const Projects = () => {
 
     return (
-        <WorkInProgress
-            title="Projects"
-            description="This section is currently under development. Stay tuned for upcoming blogs."
-        />
+        <ProjectsCard />
     );
 
 }
