@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import Button from "../buttons/Button";
 import Sociallink from "../links/Sociallink";
 import Contactlink from "../links/Contactlink";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
 
@@ -12,7 +13,7 @@ const Profile = () => {
     }
 
     return (
-        <div className="border border-[#AAAAAA]/60 rounded-lg flex flex-col items-center max-w-[520px] w-full h-full px-4 pb-8 overflow-y-auto">
+        <div className="border border-[#AAAAAA]/60 rounded-lg flex flex-col items-center max-w-[520px] w-full h-fit md:h-full lg:h-full px-4 md:px-8 pb-8">
             
             {/* Profile Image */}
             <div className="my-8">
@@ -20,14 +21,16 @@ const Profile = () => {
             </div>
 
             <div className="flex flex-col items-center">
-                <h1 className="font-[public-sans] font-bold">Raymond C. Balingbing</h1>
-                <h2 className="font-[jetbrains-mono] text-[#888888]">/remunn.</h2>
+                <h1 className="font-[public-sans] font-bold text-sm md:text-base">Raymond C. Balingbing</h1>
+                <h2 className="font-[jetbrains-mono] text-[#888888] text-sm md:text-base lg:text-base">
+                    <Link to='/'>/remunn.</Link>
+                </h2>
             </div>
 
-            <div className="flex flex-col items-center my-8">
+            <div className="flex flex-col items-center mt-6 ">
                 <div className="flex flex-col items-center gap-y-4">
                     <Button onClick={downloadResume} variant="primary" size="default">Resume</Button>
-                    <div className="flex justify-between gap-x-6">
+                    <div className="flex justify-between gap-x-[10px] md:gap-x-4">
                         <Sociallink href="https://github.com/dev-remun">@github</Sociallink>
                         <Sociallink href="https://huggingface.co/ml-remunn">@huggingface</Sociallink>
                         <Sociallink href="https://www.linkedin.com/in/raymond-balingbing-04293937a/">@linkedin</Sociallink>
@@ -35,23 +38,23 @@ const Profile = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-start gap-y-4 w-full mt-10">
-                    <Contactlink>
+                <div className="hidden md:flex flex-col items-center gap-y-4 mt-10">
+                    <Contactlink className="self-start">
                         <Phone className="w-4" />
                         <p>0963 - 7678 - 838</p>
                     </Contactlink>
 
-                    <Contactlink>
+                    <Contactlink className="self-start">
                         <Mail className="w-4" />
                         <p>dev.rcbalingbing@gmail.com</p>
                     </Contactlink>
 
-                    <Contactlink>
+                    <Contactlink className="self-start">
                         <Mail className="w-4" />
                         <p>rcb2023-9793-64187@bicol-u.edu.ph</p>
                     </Contactlink>
 
-                    <Contactlink>
+                    <Contactlink className="self-start">
                         <MapPin className="w-4" />
                         <p>Tabaco City, Albay, PH</p>
                     </Contactlink>
