@@ -12,7 +12,7 @@ const Topbar = () => {
     ]
 
     return (
-        <nav className="flex items-center w-full">
+        <nav className="flex items-center justify-between w-full">
             {/* Logo */}
             <Remun />
 
@@ -27,7 +27,6 @@ const Topbar = () => {
                     }
                 </div>
             </div>
-
         </nav>
     );
 
